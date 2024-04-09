@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+/* CSS for section 1 or background image*/
+.bg{
+    position:relative;
+    width: 100%;
+    height:100%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_medium.jpg") ;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;  
+}
+.box{
+    position:absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgb(0 0 0 / 40%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+
+}
+
+/* header of the website  */
+ header{
+    position:relative;
+    z-index: 10;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    max-width:80vw;
+    margin: auto;
+    height: 80px;
+}
+/* Netflix logo  */
+.logo svg {
+    margin: 10px;
+    width: 120px;
+    display: block;
+    overflow: hidden;
+}
+/* CSS for the two buttons of header  */
+.Navbar_button{
+    display: flex;
+}
+.button1{
+    display: flex;
+    color: white;
+    padding: 5px;
+    margin: 10px 10px 10px 0px;
+    background-color: transparent;
+    border: 1px solid rgb(206, 191, 191);
+    border-radius: 3px;
+}
+.button1 select{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;
+    background-color:transparent;
+    border: none;
+    align-items: center;
+}
+select option{
+    background-color: white;
+    color: black;
+}
+.button2{
+    margin: 10px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(250, 0, 0);
+} 
+/* text and email section of the background  */
+.hero{
+    position: relative;
+    z-index: 0;
+    padding-top:5em;
+    padding-bottom: 4em;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    max-width:80vw;
+    margin: auto;
+    text-align: center;
+    gap:1.5em;
+}
+.bigtext{
+    font-size:2em;
+    font-weight: 800;
+}
+.smalltxt1{
+    font-size:1.2em;
+}
+.smalltxt2{
+    font-size: 1em;
+}
+.inputs input{
+    margin:0.1em;
+    position: relative;
+    padding:0.8em 3em 0.8em 1em;
+    /* height: 40px; */
+    color: white;
+    border: 1px solid rgb(165, 156, 156);
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.18);
+}
+.inputs button{
+    margin:0.5em;
+    padding:0.7em 1em;
+    position: relative;
+    color: white;
+    background-color: red;
+    border:none;
+    border-radius: 5px;
+    font-size:1em;
+    font-weight: bold;
+}
+.separation{
+    height:1em;
+    width: 100vw;
+    background-color: rgba(31, 29, 29, 0.788);
+}
+
+/* CSS for the similar 2nd 3rd 4th & 5th section  */
+.sec2, .sec3,.sec4,.sec5{
+    height: 80vh;
+    box-sizing: border-box;
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+/* div containing tv and vdo  */
+.tv{
+    position: relative;
+}
+/* image of tv  */
+.img1,.img3{
+    position: relative;
+    height: 18em;
+}
+/* image of mobile  */
+.img2{
+    position: relative;
+    width:23em;
+}
+/* image of kids  */
+.img4{
+    width:23em;
+    /* height:0.5em; */
+}
+/* mobile div box of 3rd section  */
+.videobox{
+    position:absolute;
+    left: 4.5em;
+    bottom: 1em;
+    z-index: 2;
+    width: 14em;
+    height:5em;
+    background-color: black;
+    border: 2px solid rgb(99, 96, 96);
+    border-radius: 7px;
+}
+.videobox img{
+    position: absolute;
+    top: 0.3rem;
+    left: 0.4rem;
+    height: 4rem;
+    width: 3rem;
+}
+.videobox span{
+    position: absolute;
+    left:4em;
+    top: 1.5em;
+    font-family: sans-serif;
+}
+
+.videobox div:first-child{
+    color:white;
+    font-size: 0.8rem;
+}
+.videobox div:nth-child(2){
+    color:rgb(0, 110, 255);
+    font-size: 0.6rem;
+}
+/* CSS for the tv vdo  */
+.tv_vdo1{
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: -1;
+    width:19em;
+}
+.tv_vdo2{
+    position: absolute;
+    top:1.5em;
+    left: 4.5em;
+    z-index:-1;
+    width:15em;
+}
+/* text section  */
+.sec_text{
+    color: white;
+    font-family: sans-serif;
+    max-width: 35vw;
+}
+
+.sec_text1{
+    font-size:2em;
+    font-weight: 800;
+}
+.sec_text2{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+/* CSS for 6th section of content  */
+.sec6{
+    height: 130vh;
+    background-color: black;
+}
+.sec6_text1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    text-align: center;
+    margin: 2rem;
+}
+/* group of buttons  */
+.buttons{
+    max-width: 70vw;
+    margin: auto;
+}
+.button{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(45,45,45);
+    height: 5em;
+    width: 70vw;
+    margin: 0.5em;
+    position: relative;
+}
+.buttons span{
+    position: absolute;
+    left:1em;
+    font-size: 1.5em;
+}
+.buttons svg{
+    position: absolute;
+    right: 1em;  
+}
+/* CSS for inputs and email "some properties are inherited from the above CSS code"  */
+.sec6_inputs {
+    padding: 2em;
+}
+.sec6_inputs div{
+    color: white;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
+}
+/* CSS for 7th section  */
+.sec7{
+    height: 60vh;
+    line-height: 1.5em;
+    max-width:70vw;
+    margin:4em 8em 0em 8em;
+}
+.sec7 div{
+    color:  rgb(190, 183, 183);
+    font-size: 0.95em;
+    font-family: sans-serif;
+}
+.sec7 p{
+    font-family: sans-serif;
+    font-size: 1em;
+    color:rgb(190, 183, 183);
+    max-width: 100%;
+}
+
+.sec7 a{
+    color: rgb(190, 183, 183);
+}
+/* container of 4 blog divs   */
+.blogs{
+    display: flex;
+}
+.blog_part1{
+    display:flex;
+    flex-wrap: wrap;
+}
+.blog_part2{
+    display:flex;
+    flex-wrap: wrap;
+}
+.blogs ul{
+    list-style-type: none;
+}
+.blogs .blog1,.blog2,.blog3,.blog4{
+    padding-top: 10px;
+    padding-left: 0px;
+}
+.blog{
+    padding-right:3em;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.buttons button:hover{
+   background-color: rgba(92, 89, 89, 0.87);
+}
